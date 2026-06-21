@@ -26,5 +26,9 @@
   },
   "devDependencies": {
     "standard": "17.1.2"
+  },
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   }
 }

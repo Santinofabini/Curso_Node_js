@@ -4,11 +4,11 @@ const pc = require('picocolors')
 
 const folder = process.argv[2] ?? '.'
 
-/*map async           → crea una promesa por archivo
+/* map async           → crea una promesa por archivo
 return              → devuelve la línea final de ese archivo
 Promise.all         → espera a que todas estén listas
 filesInfo           → array con todas las líneas
-forEach console.log → imprime línea por línea*/
+forEach console.log → imprime línea por línea */
 
 async function ls (folder) {
   let files
