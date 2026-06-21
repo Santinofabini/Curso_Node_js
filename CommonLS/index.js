@@ -1,3 +1,3 @@
-console.log('Hello, World!');
+//CommonJS
 const sum = require('./sum'); //se copia en sum lo exportado
 console.log(sum(2,3));
