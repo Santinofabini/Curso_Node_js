@@ -19,7 +19,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch ./Clase-2/2.routing.js",
+    "start": "node ./Clase-2/2.routing.js"
   },
   "dependencies": {
     "picocolors": "1.1.1"
@@ -27,8 +28,9 @@
   "devDependencies": {
     "standard": "17.1.2"
   },
-  "scripts": {
-    "lint": "standard",
-    "lint:fix": "standard --fix"
-  }
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "lint": "standard",
+  "lint:fix": "standard --fix"
 }
