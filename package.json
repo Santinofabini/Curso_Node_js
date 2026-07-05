@@ -20,17 +20,30 @@
   "main": "index.js",
   "scripts": {
     "dev": "node --watch ./Clase-2/2.routing.js",
-    "start": "node ./Clase-2/2.routing.js"
+    "start": "node ./Clase-2/2.routing.js",
+    "dev2": "node --watch ./Clase-2/3.express.js",
+    "dev3": "node --watch ./Clase-3/app.js",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "dependencies": {
-    "picocolors": "1.1.1"
+    "cors": "^2.8.6",
+    "express": "4.22.2",
+    "picocolors": "1.1.1",
+    "zod": "4.4.3"
   },
   "devDependencies": {
     "standard": "17.1.2"
   },
   "eslintConfig": {
-    "extends": "standard"
+    "extends": "standard",
+    "ignorePatterns": [
+      "**/*.html"
+    ]
   },
-  "lint": "standard",
-  "lint:fix": "standard --fix"
+  "standard": {
+    "ignore": [
+      "**/*.html"
+    ]
+  }
 }
